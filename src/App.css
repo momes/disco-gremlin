@@ -1,38 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
 .App {
   text-align: center;
+  width:100vw;
+  height: 100vh;
+  background-color: rgba(0,128,129,255);
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  height: 5vh;
+  width: 100vw;
+  border-top: 2px solid rgba(244,250,249,255);
+  background-color: rgba(192,192,192,255);
+  position: fixed;
+  bottom: 0px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.iconButton{
+  background-color: rgba(0,128,129,255);
+  border: none !important;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 50px;
+}
+.MediaIcon {
+  height: 60px;
+  width: 60px;
+}
+.Label {
+  width:90px;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.MediaIconButton {
+  background-color:transparent;
+  border: none
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.StartButton {
+  height:4vh;
+}
+
+.Misc {
+  height: 4vh;
+}
+
+.bottomBar {
+  position: fixed;
+  left: 4px;
+  bottom: 0px;
 }

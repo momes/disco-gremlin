@@ -1,0 +1,55 @@
+.MediaPlayer {
+    width: 70vw;
+    background-color: rgb(198 198 198);
+    border: 1px black solid;
+    position: absolute;
+    z-index: 20;
+    padding-bottom: 5vh;
+}
+
+.top {
+    height: 22px;
+    background-color: rgb(0 0 130);
+}
+
+.CloseButton {
+    height:20px;
+    background-color:transparent;
+    border:none;
+}
+
+.Close {
+    height:20px;
+}
+
+.Player {
+    width:65vw;
+    margin-top:2vh;
+}
+
+.MediaButton {
+    width:100%;
+    margin: 0px 0px;
+}
+
+.Bar {
+    width:65vw;
+}
+
+.Button {
+    padding: 0px 0px;
+    display:flex;
+    border:1.5px black solid;
+}
+.buttons {
+    display:flex;
+    max-height:20vh;
+    width: 90%;
+    align-items: center;
+    margin-top: 2vh;
+    margin-left: 5%;
+}
+
+.Button:active {
+    box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.24)
+}
