@@ -27,6 +27,7 @@ function App() {
   };
 
   return (
+    <div className='AppWrap'>
     <div className="App">
       {openPlayer && <MediaPlayer onClickClose={togglePlayer} />}
       <DragMove onDragMove={handleDragMove}>
@@ -48,6 +49,7 @@ function App() {
         <img src={Misc} className='Misc'/>
         </div>
       </div>
+    </div>
     </div>
   );
 }
