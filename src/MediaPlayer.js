@@ -35,6 +35,7 @@ function MediaPlayer({onClickClose}) {
   return (
     <div className='MediaPlayer'>
       <div className='top'>
+        <div className='tab'>changeme</div>
         <button className='CloseButton' onClick={handleClosePlayer}>
         <img src={Close} className='Close'/>
         </button>

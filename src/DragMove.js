@@ -2,10 +2,7 @@ import React, { useState } from "react";
 
 export default function DragMove(props) {
   const {
-    onPointerDown,
-    onPointerUp,
-    onPointerMove,
-    onDragMove,
+    onTouchMove,
     children,
     style,
     className
@@ -16,26 +13,25 @@ export default function DragMove(props) {
   const handlePointerDown = (e) => {
     setIsDragging(true);
 
-    onPointerDown(e);
+    //onTouchStart(e);
   };
 
   const handlePointerUp = (e) => {
     setIsDragging(false);
 
-    onPointerUp(e);
+    //onTouchEnd(e);
   };
 
   const handlePointerMove = (e) => {
-    if (isDragging) onDragMove(e);
-
-    onPointerMove(e);
+    console.log(e)
+    if (isDragging) onTouchMove(e);
   };
 
   return (
     <div
-      onPointerDown={handlePointerDown}
-      onPointerUp={handlePointerUp}
-      onPointerMove={handlePointerMove}
+    onTouchStart={handlePointerDown}
+    onTouchEnd={handlePointerUp}
+      onTouchMove={handlePointerMove}
       style={style}
       className={className}
     >

@@ -17,6 +17,7 @@
   margin-left: 5vw;
   margin-top: 5vh;
   position: fixed;
+  text-align: left;
 }
 
 .footer {
@@ -50,7 +51,9 @@ p {
 
 .MediaIconButton {
   background-color:transparent;
-  border: none
+  border: none;
+  margin-top:2vh;
+  position: fixed;
 }
 
 .StartButton {
@@ -70,4 +73,12 @@ p {
 img {
   pointer-events: none;
   cursor: default;
+}
+
+.NotebookIconButton {
+  background-color:transparent;
+  border: none;
+  margin-top:22vh;
+  margin-left: 2vw;
+  position: fixed;
 }

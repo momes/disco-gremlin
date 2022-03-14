@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+.Notepad {
+    position: fixed;
+    z-index: 20;
+}
+.Notepad-bg {
+    width: 85vw;
+    z-index: 21;
+    left: 7vw;
+    position: fixed;
+    top: 17vh;
+}
+
+.Gremlin {
+    position: fixed;
+    width:68vw;
+    z-index: 25;
+    top: 25vh;
+    left: 10%;
+}
+
+.Definition {
+    position: fixed;
+    width:78vw;
+    z-index: 25;
+    top: 12vh;
+    left: 10%;
+}
+
+p {
+    font-family: 'Cutive Mono', monospace;
+    letter-spacing: -2px;
+    color: black;
+    line-height: 12px;
+    z-index:25;
+}
+
+.Notepad-Button {
+    position:fixed;
+    top: 17vh;
+    z-index: 25;
+    height: 5vh;
+    width: 12vw;
+    left: 80vw;
+    border: none;
+    background: transparent;
+}
