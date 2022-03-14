@@ -64,3 +64,8 @@ p {
   left: 5.3vw;
   bottom: 5vh;
 }
+
+img {
+  pointer-events: none;
+  cursor: default;
+}
