@@ -4,26 +4,27 @@ import mediaIcon from './icon.png';
 import startButton from './start.png';
 import DiscoGremlinFont from './disco-gremlin.png';
 import Misc from './misc.png';
-import React, { useEffect, useState } from 'react';
-import NotepadIcon from './notepad-icon.png';
+import React, { useEffect, useLayoutEffect, useState } from 'react';
 import MediaPlayer from './MediaPlayer';
-import Notepad from './Notepad';
+import Gremlins from './Gremlins';
 function App() {
   const [openPlayer, setOpenPlayer] = useState(false);
-  const [openNotebook, setOpenNotebook] = useState(false);
+  const [openGremlins, setOpenGremlins] = useState(false);
 
   const togglePlayer = () => {
     setOpenPlayer(!openPlayer);
   }
 
-  const toggleNotebook = () => {
-    setOpenNotebook(!openNotebook)
+  
+  const gremlinOverkill = () => {
+    setOpenGremlins(true)
   }
 
   return (
     <div className='AppWrap'>
     <div className="App">
-      {openPlayer && <MediaPlayer onClickClose={togglePlayer} />}
+      {openGremlins && <Gremlins />}
+      {openPlayer && <MediaPlayer onClickClose={togglePlayer} onClickQuestion={gremlinOverkill}/>}
           <button
             className='MediaIconButton'
             onClick={togglePlayer}

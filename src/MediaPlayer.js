@@ -1,17 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './MediaPlayer.css'; 
 import Close from './close.png';
-import Player from './player.png';
+import Player from './player.gif';
 import ButtonPlay from './button-play.png';
 import ButtonStop from './button-stop.png';
 import ButtonPause from './button-pause.png';
 import ButtonForward from './button-forward.png';
 import ButtonBack from './button-back.png';
+import ButtonQuestion from './button-question.png';
 import TopBarFont from './top-bar-gremlins.png';
 import Bar from './bar.png';
 import AudioURL from './disco_gremlins_01.mp3';
 
-function MediaPlayer({onClickClose}) {
+function MediaPlayer({onClickClose, onClickQuestion}) {
   const [isPlaying, toggleIsPlaying] = useState(true);
   const audio = useRef()
 
@@ -58,6 +59,9 @@ function MediaPlayer({onClickClose}) {
       </button>
       <button className='Button' onClick={() => onClick('restart')}>
         <img src={ButtonForward} className='MediaButton'/>
+      </button>
+      <button className='Button' onClick={onClickQuestion}>
+        <img src={ButtonQuestion} className='MediaButton'/>
       </button>
       </div>
       <audio ref={audio} src={AudioURL}/>
