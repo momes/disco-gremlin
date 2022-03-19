@@ -33,13 +33,13 @@ function App() {
             <br/>
             <img src={DiscoGremlinFont} className='Label'/>
           </button>
+    </div>
       <div className="footer">
         <div className='bottomBar'>
         <img src={startButton} className='StartButton'/>
         <img src={Misc} className='Misc'/>
         </div>
       </div>
-    </div>
     </div>
   );
 }
