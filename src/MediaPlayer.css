@@ -1,5 +1,6 @@
 .MediaPlayer {
     width: 80vw;
+    max-width: 600px;
     background-color: rgb(198 198 198);
     border: 3px #f3f3f3 solid;
     position: absolute;
@@ -18,13 +19,17 @@
 
 .tab {
     color: white;
+    height:90%;
+    margin-top:1px;
+    margin-left:1px;
 }
 
 .CloseButton {
     height:20px;
     background-color:transparent;
     border:none;
-    margin-right: 0px;
+    position: absolute;
+    right: -1%;
 }
 
 .Close {
@@ -34,9 +39,9 @@
 }
 
 .Player {
-    width:65vw;
+    width:80%;
     margin-top:2vh;
-    margin-left: 8vw;
+    margin-left: 10%;
 }
 
 .MediaButton {
@@ -45,8 +50,8 @@
 }
 
 .Bar {
-    width:65vw;
-    margin-left: 8vw;
+    width:90%;
+    margin-left: 5%;
 }
 
 .Button {

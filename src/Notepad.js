@@ -23,7 +23,6 @@ function Notepad({onClickClose}) {
   return (
     <div className='Notepad'>
       <button className='Notepad-Button' onClick={handleCloseNotepad}/>
-      <img src={Gremlin} className='Gremlin' />
       <img src={NotepadImage} className='Notepad-bg'/>
     </div>
     

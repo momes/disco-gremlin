@@ -32,14 +32,6 @@ function App() {
             <br/>
             <img src={DiscoGremlinFont} className='Label'/>
           </button>
-      {openNotebook && <Notepad onClickClose={toggleNotebook}/>}
-          <button
-          className="NotebookIconButton"
-            onClick={toggleNotebook}
-          >
-            <img src={NotepadIcon} className="MediaIcon"/>
-            <br/>
-          </button>
       <div className="footer">
         <div className='bottomBar'>
         <img src={startButton} className='StartButton'/>

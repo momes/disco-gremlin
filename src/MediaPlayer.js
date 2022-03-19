@@ -7,6 +7,7 @@ import ButtonStop from './button-stop.png';
 import ButtonPause from './button-pause.png';
 import ButtonForward from './button-forward.png';
 import ButtonBack from './button-back.png';
+import TopBarFont from './top-bar-gremlins.png';
 import Bar from './bar.png';
 import AudioURL from './disco_gremlins_01.mp3';
 
@@ -35,7 +36,7 @@ function MediaPlayer({onClickClose}) {
   return (
     <div className='MediaPlayer'>
       <div className='top'>
-        <div className='tab'>changeme</div>
+        <img className='tab' src={TopBarFont}/>
         <button className='CloseButton' onClick={handleClosePlayer}>
         <img src={Close} className='Close'/>
         </button>
