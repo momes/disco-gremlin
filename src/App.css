@@ -25,8 +25,8 @@
   width: 90vw;
   border-top: 2px solid rgba(244,250,249,255);
   background-color: rgba(192,192,192,255);
-  position: fixed;
-  bottom: 10vh;
+  position: absolute;
+  bottom: 0
 }
 
 .iconButton{
@@ -64,9 +64,7 @@ p {
 }
 
 .bottomBar {
-  position: fixed;
-  left: 5.3vw;
-  bottom: 10vh;
+  position: absolute;
 }
 
 img {
